@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+//Nested components
+
+import About from './About'
+import Skills from './Skills.js'
+import Navbar from './Navbar.js'
+import Education from './Education.js'
+import Portfolios from './Portfolios'
+import Contact from './Contact'
+import Services from './services'
+
+//App_Root_Components_Module
+export default function App() {
+
+  return (<>
+    <Navbar />
+    <About />
+    <Skills />
+    <Education />
+    <Portfolios />
+    <Services />
+    <Contact />
+
+  </>)
 }
 
-export default App;
